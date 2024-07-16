@@ -19,7 +19,7 @@ export const NetflixSeries =()=>{
    </div>
      <h2>Name: Strangers Things</h2>
      <h3>Rating: 8.7</h3>
-     <p> Summary : This is a funtastic series. This is a fantasy series. </p>
+     <p> Summary : This is a fantastic series. This is a fantasy series. </p>
   </div>
   )
 

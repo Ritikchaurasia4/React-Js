@@ -126,18 +126,56 @@ export const App = ()=>{
   const name = "Stranger Things";
   const rating = "8.5";
   const summary = "This is one of the best Series on Netfelix";
-  const returngenre=()=>{
+
+  let age = 16;
+
+  const returnGenre =()=>{
     const genre = "Fantasy";
     return genre;
   };
+
+  if(age < 18){
+
+    return(
+      <div>
+        <div>
+          <img src="Stranger.jpg" alt="Stranger" width="30%" height="30%"/>
+        </div>
+           
+          <h3>Name: {name}</h3>  {/* here we can pass the variables */}
+    
+          <h3>Rating:{5+3.5}</h3>   {/* here we can pass the expressions also */}
+    
+    
+          <p>Summary:{summary}</p>   {/* here we can pass the variables */}
+    
+    
+          <p>Genre:{returnGenre()}</p>  {/* here we can pass the functionCalls also */}
+    
+          <button>Not available</button>
+    
+      </div>
+    );
+  }
+
   return(
-  <div>
     <div>
-      <img src="Stranger.jpg" alt="Stranger" width="30%" height="30%"/>
+      <div>
+        <img src="Stranger.jpg" alt="Stranger" width="30%" height="30%"/>
+      </div>
+         
+        <h3>Name: {name}</h3>  {/* here we can pass the variables */}
+  
+        <h3>Rating:{5+3.5}</h3>   {/* here we can pass the expressions also */}
+  
+  
+        <p>Summary:{summary}</p>   {/* here we can pass the variables */}
+  
+  
+        <p>Genre:{returngenre()}</p>  {/* here we can pass the functionCalls also */}
+  
+        <button>Watch Now</button>
+  
     </div>
-      <h3>Name: {name}</h3>
-      <h3>Rating:{5+3.5}</h3>  
-      <p>Summary:{summary}</p>
-      <p>Genre:{returngenre()}</p>
-  </div>)
+  );
 }

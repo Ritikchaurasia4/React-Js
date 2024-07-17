@@ -109,14 +109,20 @@
 // ---------------------------------------------------------------
 
 
-// import {Fragment} from "react";
+import {Fragment} from "react";
 export const App = ()=>{
+  const name = "Stranger Things";
+  const rating = "8.5";
+  const summary = "This is one of the best Series on Netfelix";
   return(
-    <>
-     <NetfelixSeries/>
-     <NetfelixSeries/>
-     <NetfelixSeries/>
-    </>
+    <div>
+     <div>
+      <img src="Stranger.jpg" alt="Stranger" width="30%" height="30%"/>
+     </div>
+      <h3>Name: {name}</h3>
+      <h3>Rating:{rating}</h3>
+      <p>Summary:{summary}</p>
+   </div>
   );
   
 };
@@ -124,9 +130,11 @@ export const App = ()=>{
  const NetfelixSeries=()=>{
   return(
   <div>
-    <img src="Stranger.jpg" alt="Stranger" width="30%" height="30%"/>
-    <h3>Stranger Things</h3>
-    <h3>Rating:8.5</h3>
-    <p>This is one of the best Series on Netfelix</p>
+    <div>
+      <img src="Stranger.jpg" alt="Stranger" width="30%" height="30%"/>
+    </div>
+      <h3>Name: {name}</h3>
+      <h3>Rating: 8.5</h3>
+      <p>Summary:This is one of the best Series on Netfelix</p>
   </div>)
 }

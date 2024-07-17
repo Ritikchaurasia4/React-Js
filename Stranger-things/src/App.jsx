@@ -126,6 +126,10 @@ export const App = ()=>{
   const name = "Stranger Things";
   const rating = "8.5";
   const summary = "This is one of the best Series on Netfelix";
+  const returngenre=()=>{
+    const genre = "Fantasy";
+    return genre;
+  };
   return(
   <div>
     <div>
@@ -134,5 +138,6 @@ export const App = ()=>{
       <h3>Name: {name}</h3>
       <h3>Rating:{5+3.5}</h3>  
       <p>Summary:{summary}</p>
+      <p>Genre:{returngenre()}</p>
   </div>)
 }

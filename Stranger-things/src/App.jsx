@@ -20,11 +20,13 @@
 //   </div>)
 // }
 
-// ---------------------------------------------------------------
 
-// we can also write the above code as given below :
 
-// ---------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------------
+
+// we can also write the above code as given below : that is we can return in array form also.
+
+// ---------------------------------------------------------------------------------------------------------------------------
 
 // export const App = ()=>{
 //   return([<NetfelixSeries key="1"/> , <NetfelixSeries key="2"/>]
@@ -43,19 +45,19 @@
 // }
 
 
-// ---------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------
 
-// we can also write the above code as given below : Using Fragment
+// we can also write the above code as given below : Using Fragment ( If we use Fragment then it is necessary to import the React )
 
-// ---------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------
 
 // import React from "react";
 // export const App = ()=>{
 //   return(
 //     <React.Fragment>
-//      <NetfelixSeries/>
-//      <NetfelixSeries/>
-//      <NetfelixSeries/>
+//       <NetfelixSeries/>
+//       <NetfelixSeries/>
+//       <NetfelixSeries/>
 //     </React.Fragment>
 //   );
   
@@ -72,20 +74,20 @@
 // }
 
 
-// ---------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------
 
-// we can also write the above code as given below : Using Fragment
+// we can also write the above code as given below : Using Fragment 
 
-// ---------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------
 
 
 // import {Fragment} from "react";
 // export const App = ()=>{
 //   return(
 //     <Fragment>
-//      <NetfelixSeries/>
-//      <NetfelixSeries/>
-//      <NetfelixSeries/>
+//        <NetfelixSeries/>
+//        <NetfelixSeries/>
+//        <NetfelixSeries/>
 //     </Fragment>
 //   );
   
@@ -102,7 +104,7 @@
 // }
 
 
-// ---------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------
 
 // we can also write the above code as given below :
 
@@ -114,9 +116,9 @@
   
 //   return(
 //     <>
-//      <NetfelixSeries/>
-//      <NetfelixSeries/>
-//      <NetfelixSeries/>
+//        <NetfelixSeries/>
+//        <NetfelixSeries/>
+//        <NetfelixSeries/>
 //    </>
 //   );
   
@@ -182,7 +184,7 @@
 // }
 
 
-// ---------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------
 
 // we can also write the just above code as given below :
 
@@ -232,7 +234,7 @@
   
 //         <p>Genre:{returnGenre()}</p>  {/* here we can pass the functionCalls also */}
   
-//   Second ways to write the above code ........ 
+//   Second ways to write the above code ........ ( Using ternary operator ) .....................s
 
 //         <button>{age >=18 ? "watch Now" : "Not available"}</button> 
         
@@ -242,7 +244,7 @@
 // }
 
 
-// ---------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------
 
 // we can also write the just above code as given below :
 
@@ -291,13 +293,10 @@
   
 //         <h3>Rating:{5+3.5}</h3>   {/* here we can pass the expressions also */}
   
-//   <h1></h1>
 //         <p>Summary:{summary}</p>   {/* here we can pass the variables */}
   
   
 //         <p>Genre:{returnGenre()}</p>  {/* here we can pass the functionCalls also */}
-  
-//         {/* <button>{age >=18 ? "watch Now" : "Not available"}</button> */}
 
 //         <button>{canWatch}</button>
   

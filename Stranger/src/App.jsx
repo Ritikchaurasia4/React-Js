@@ -1,4 +1,6 @@
-import NetflixSeries from "./Components/NetFlix.jsx";
+
+
+import {NetflixSeries , Footer} from "./Components/NetFlix.jsx";
 export const App = ()=>{
   return (
     
@@ -8,6 +10,8 @@ export const App = ()=>{
    <NetflixSeries/>
 
    <NetflixSeries/>
+
+   <Footer/>
 </div>
  );
 }; 

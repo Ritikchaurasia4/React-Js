@@ -42,7 +42,7 @@
     {
       "name": "The Crown",
       "id": "the-crown",
-      "img_url": "http://localhost:5173/crown.joeg",
+      "img_url": "http://localhost:5173/crown.jpeg",
       "rating": "8.6",
       "description": "Follows the political rivalries and romance of Queen Elizabeth II's reign and the events that shaped the second half of the 20th century.",
       "cast": ["Claire Foy", "Olivia Colman", "Imelda Staunton"],
@@ -62,7 +62,7 @@
     {
       "name": "Queen of Tears",
       "id": "queen-of-tears",
-      "img_url": "http://localhost:5173/images/qot.jpg",
+      "img_url": "http://localhost:5173/qot.jpg",
       "rating": "TBD",
       "description": "A gripping tale of love, loss, and resilience set against the backdrop of a war-torn nation.",
       "cast": ["Kim Soo Hyun", "Kim Ji Won"],

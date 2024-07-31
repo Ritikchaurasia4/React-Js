@@ -20,17 +20,16 @@
 // Named  export and import ..................
 
 import NetflixSerie from "./Components/NetFlix.jsx";
+
 export const App = ()=>{
   return (
     
-<div>
-   
-   <NetflixSerie/>
-  
-
-   
-</div>
+  <div>
+     
+    <NetflixSerie/>
+  </div>
  );
 }; 
 
 
+export default App;

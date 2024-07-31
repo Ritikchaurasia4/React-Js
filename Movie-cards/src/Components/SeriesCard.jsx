@@ -1,5 +1,6 @@
 // import seriesData from "../api/seriesData.json";
 export const SeriesCard=(props)=>{
+  console.log(props);
     return(
         
       

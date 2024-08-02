@@ -1,6 +1,8 @@
-import NetflixSeries from "./components/netflix";
-import "./components/Netflix.css";
-export const App =()=>{
+import NetflixSeries from "./Components/netflix";
+// import "./Components/Netflix.css";
+
+import "./Components/ritik.module.css";
+const App =()=>{
     return(
         <section className="container">
             <h1 className="card-heading"> List of Best <font style={{color:"red"}}>Netflix </font>series </h1>
@@ -10,3 +12,5 @@ export const App =()=>{
     
 }
 export default App;
+
+ 

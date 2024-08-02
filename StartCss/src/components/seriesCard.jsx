@@ -26,7 +26,7 @@
   
 //   export default SeriesCard;
 
-// ============= or , ================================
+// ============= or , =================================================================================
 
 // export const SeriesCard=({curElem})=>{
   
@@ -55,7 +55,7 @@
 
 // export default SeriesCard;
 
-// ======== The above code can also be written as ======= , For the Same output I am  not applying inline css we are applying the External css AND  we can also apply the inline css .
+// ============== The above code can also be written as ======= , For the Same output We are  not applying inline css we are applying the External css AND ( we can also apply the inline css ) .
 
 // export const SeriesCard=({curElem})=>{
   
@@ -96,7 +96,7 @@
 // export default SeriesCard;
 
 
-// ========= the just above code can also be written as ==============
+// ======================== the just above code can also be written as ===================================================
 
 // export const SeriesCard=({curElem})=>{
   
@@ -164,7 +164,7 @@
 // export default SeriesCard;
 
 
-// ========= the just above code can also be written as ==============
+// ================================ the just above code can also be written as ================================================
 
 
 export const SeriesCard=({curElem})=>{
@@ -232,4 +232,4 @@ export const SeriesCard=({curElem})=>{
     );
 };
 
-export default SeriesCard;
+// export default SeriesCard;

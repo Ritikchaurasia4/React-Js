@@ -73,7 +73,17 @@ export const SeriesCard=({curElem})=>{
   
     const {id , img_url , name , rating , description , cast , genre , watch_url} = curElem;    // Destructuring 
 
-    // Styled-components just below 
+    //  const btn_style = {
+    //   padding:"1.2rem 2.4rem",
+    //   border:"none" , 
+    //   fontSize:"1.6rem" , 
+    //   backgroundColor:`${rating>=8.5 ? "#7dcea0" : "#f7dc6f"}`,
+    //   color:"var(--btn-color)" ,
+    //   fontWeight:"bold",
+    //   cursor:"pointer",
+    //  };
+
+    // Styled-components using object in just below .
     
     const ButtonStyle = styled.button({
       padding:"1.2rem 2.4rem",
@@ -84,15 +94,15 @@ export const SeriesCard=({curElem})=>{
       fontWeight:"bold",
       cursor:"pointer",
     });
-    //  const btn_style = {
-    //   padding:"1.2rem 2.4rem",
-    //   border:"none" , 
-    //   fontSize:"1.6rem" , 
-    //   backgroundColor:`${rating>=8.5 ? "#7dcea0" : "#f7dc6f"}`,
-    //   color:"var(--btn-color)" ,
-    //   fontWeight:"bold",
-    //   cursor:"pointer",
-    //  };
+
+    // using styled components we can change the Rating color , we can also change it using inline css .
+
+    const Rating = styled.h3`
+     font-size:1.6rem;
+     color:#7dcea0;
+    //  text-transform:capitalize;
+    `;
+
     const ratingClass = rating>=8.5 ? styles.super_hit : styles.average;
   
       return(
@@ -102,10 +112,15 @@ export const SeriesCard=({curElem})=>{
                </div>
                <div className={styles["card-content"]}>
                   <h2>Name: {name}</h2>
-                  <h3>
+                  {/* <h3>
                       Rating: <span className={`${styles.rating} ${ratingClass}`}>{rating} </span>  
-                  </h3>
-                 <p> Summary: {description} </p>
+                  </h3> */}
+
+                  <Rating>
+                      Rating: <span className={`${styles.rating} ${ratingClass}`}>{rating} </span>  
+                  </Rating>
+
+                 <p className="text-3xl font-bold underline"> Summary: {description} </p>
                  <p>Genre:{genre}</p>
                  <p> Caste:{cast} </p>
                  <a href={watch_url} target="_blank" > 
@@ -113,6 +128,7 @@ export const SeriesCard=({curElem})=>{
                    <ButtonStyle>Watch Now</ButtonStyle>
                   </a>
                 </div>
+              
             </li>
            
       );

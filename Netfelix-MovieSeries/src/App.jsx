@@ -1,5 +1,5 @@
 
-import  NetflixSeries  from "./components/NetflixSeries.jsx";
+import  NetflixSeries  from "./components/NetflixSeries";
 export  const App = ()=>{
   return (
     

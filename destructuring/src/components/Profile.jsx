@@ -8,7 +8,7 @@ function Profile()
                 <strong>Hii Ritik , Have a wonderful day!</strong>
             </div>
           }>
-            <p>Hobbies :Reading , Hiking</p>
+            <p className="text-3xl font-bold underline">Hobbies :Reading , Hiking</p>
             <button>Contact</button>
          </ProfileCard>
         </div>

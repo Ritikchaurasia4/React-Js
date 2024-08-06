@@ -7,6 +7,7 @@ export const EventProps = ()=>{
     }
     return(
         <>
+        <h2>Hey , These are buttons to understand about Event handler as a props in React js</h2>
           <WelcomeUser onClick={() => HandleWelcomeUser("RitikChaurasia")} onMouseEnter={HandleHover} />
         </>
     )

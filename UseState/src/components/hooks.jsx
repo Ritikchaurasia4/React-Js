@@ -1,7 +1,7 @@
 // export const State = ()=>{
 //    let value = 0;
 //     const handleButton =()=>{
-//         value++;
+//         value++;  // Never Used in Reactjs
 //         console.log(value);
 //     }
 //     return(
@@ -33,17 +33,39 @@ export const State = ()=>{
 //    console.log(array);
 
    const [count , setCount] = useState(0);
-
+   console.log("Parent component rendered")
    const handleButtonClick =()=>{
     setCount(() => count + 1);
    }
 
     return(
          <>
-         <section className="main-div">
+         <div className="main-div">
              <h1>{count}</h1>
              <button onClick={handleButtonClick}>Increment</button>
-         </section>
+         </div>
+         {/* <ChildComponent/> */}
+         <ChildComponent count={count}/>
+         {/* <Sibling/> */}
          </>
      );
  };
+//  function ChildComponent()
+//  {
+//     console.log("Child component Rendered");
+//     return(
+//         <div className="main-div">
+//             <h1>Child Component</h1>
+//         </div>
+//     );
+//  }
+function ChildComponent({count})
+{
+   console.log("Child component Rendered");
+   return(
+       <div className="main-div">
+           <h1>Child Component - {count}</h1>
+       </div>
+   );
+}
+

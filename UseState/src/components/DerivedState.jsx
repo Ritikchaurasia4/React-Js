@@ -1,4 +1,4 @@
-ss//  const users = [
+//  const users = [
 //     {name:"Ritik" , age:21},
 //     {name:"Rahul" , age:26},
 //     {name:"Shubham" , age:15},

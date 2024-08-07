@@ -46,7 +46,7 @@ export const State = ()=>{
          </div>
          {/* <ChildComponent/> */}
          <ChildComponent count={count}/>
-         {/* <Sibling/> */}
+        
          </>
      );
  };

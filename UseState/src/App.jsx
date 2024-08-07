@@ -1,15 +1,17 @@
+import {DerivedState} from "./components/DericedState";
 import "./components/EV.css";
-import {State} from "./components/hooks";
+// import {State} from "./components/hooks";
 export const App =()=>{
   return (
       <section>
         <h1></h1>
-        <State/>
-        <Sibling/>
+        {/* <State/> */}
+        {/* <Sibling/> */}
+        <DerivedState/>
       </section>
   );
 };
-function Sibling()
+/* function Sibling()
 {
    console.log("Child component Rendered");
    return(
@@ -17,4 +19,4 @@ function Sibling()
            <h1>Sibling Component</h1>
        </div>
    );
-}
+} */
